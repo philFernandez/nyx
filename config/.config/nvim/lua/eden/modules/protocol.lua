@@ -36,35 +36,33 @@ M.plugins = {
 
   -- Treesitter ---------------------------------------------------------------
   {
-    {
-      "nvim-treesitter/nvim-treesitter",
-      run = ":TSUpdate",
-      config = function()
-        require("eden.modules.protocol.treesitter")
-      end,
-      requires = {
-        { "romgrk/nvim-treesitter-context", opt = true, disabled = not edn.platform.is_windows },
-        { "JoosepAlviste/nvim-ts-context-commentstring", opt = true },
-        { "nvim-treesitter/nvim-treesitter-textobjects", opt = true },
-        { "windwp/nvim-ts-autotag", opt = true },
-      },
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+    config = function()
+      require("eden.modules.protocol.treesitter")
+    end,
+    requires = {
+      { "romgrk/nvim-treesitter-context", opt = true, disabled = not edn.platform.is_windows },
+      { "JoosepAlviste/nvim-ts-context-commentstring", opt = true },
+      { "nvim-treesitter/nvim-treesitter-textobjects", opt = true },
+      { "windwp/nvim-ts-autotag", opt = true },
     },
-    {
-      "nvim-treesitter/playground",
-      cmd = { "TSPlaygroundToggle", "TSHighlightCapturesUnderCursor" },
-    },
-    {
-      "code-biscuits/nvim-biscuits",
-      after = "nvim-treesitter",
-      config = function()
-        require("nvim-biscuits").setup({
-          cursor_line_only = true,
-        })
-        edn.keymap("<leader>tb", function()
-          require("nvim-biscuits").toggle_biscuits()
-        end)
-      end,
-    },
+  },
+  {
+    "nvim-treesitter/playground",
+    cmd = { "TSPlaygroundToggle", "TSHighlightCapturesUnderCursor" },
+  },
+  {
+    "code-biscuits/nvim-biscuits",
+    after = "nvim-treesitter",
+    config = function()
+      require("nvim-biscuits").setup({
+        cursor_line_only = true,
+      })
+      edn.keymap("<leader>tb", function()
+        require("nvim-biscuits").toggle_biscuits()
+      end)
+    end,
   },
 }
 
