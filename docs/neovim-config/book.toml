@@ -1,0 +1,6 @@
+[book]
+authors = ["James Simpson"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Build your own neovim configuration"

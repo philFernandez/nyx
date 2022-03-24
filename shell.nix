@@ -13,6 +13,7 @@ pkgs.mkShell {
     git
     git-crypt
     nixUnstable
+    mdbook
   ];
 
   shellHook = ''
