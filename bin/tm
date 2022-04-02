@@ -3,12 +3,17 @@
 set -e
 
 # shellcheck shell=bash
-INTERNAL_COMMANDS="^(attach|help|kill|wcmd)$"
+INTERNAL_COMMANDS="^(add|attach|help|kill|remove|wcmd)$"
 
 declare -A INTERNAL_ALIASES
 INTERNAL_ALIASES['a']="attach"
 INTERNAL_ALIASES['w']="wcmd"
 INTERNAL_ALIASES['k']="kill"
+
+CACHE_HOME="$HOME/.cache/tmux"
+WORKSPACE_CACHE_FILE="$CACHE_HOME/workspace"
+SINGLE_CACHE_FILE="$CACHE_HOME/single"
+# DIGEST_PATH="$CACHE_HOME/digests"
 
 function main() {
   TM_COMMAND="attach"
@@ -49,11 +54,76 @@ function main() {
 
   [ -n "$HELP" ] && help
 
+  validate-cache-files
+
   "cmd_$TM_COMMAND" "${TM_ARGS[@]}" "$@"
   exit 0
 }
 
 # --- Commands ----------------------------------------------------------------
+
+function cmd_add() {
+  set +e
+  local help_msg
+  ifs='' read -r -d '' help_msg <<eof
+USAGE: tm add [path...]
+
+Add a path to the list of folders to attach.
+
+This path can either be a 'workspace' path or just a 'single' path. A workspace
+path will search for all git directories that are contains within. By default a
+path is a 'single' path.
+
+OPTIONS:
+  -h, --help      Show help message
+  -w, --workspace Use path as a workspace path
+
+ARGS:
+  <path...>       Optional path to be added. Uses 'cwd' if not present
+eof
+  set -e
+
+  local -a args
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      -w | --workspace)
+        use_workspace=true
+        ;;
+      *)
+        args+=("$1")
+        ;;
+    esac
+    shift
+  done
+
+  [ -n "$CMD_HELP" ] && {
+    printf "%s\n" "$help_msg"
+    exit 1
+  }
+
+  local filepath
+  if [[ -z $use_workspace ]]; then
+    filepath="$SINGLE_CACHE_FILE"
+  else
+    filepath="$WORKSPACE_CACHE_FILE"
+  fi
+
+  local path
+
+  if [[ ${#args[@]} -eq 0 ]]; then
+    path=("$(pwd)")
+  else
+    for p in "${args[@]}"; do
+      path=("${path[@]}" "$(realpath "$p")")
+    done
+  fi
+
+  for p in "${path[@]}"; do
+    if ! grep -q "$p" "$filepath"; then
+      echo "$p" >>"$filepath"
+    fi
+  done
+}
 
 function cmd_attach() {
   set +e
@@ -104,9 +174,17 @@ eof
     local list_git_dirs=("$HOME/dev")
     local selection_list=("$HOME/.local/nyx" "$HOME/.config/nvim" "$HOME/.config/awesome")
 
+    for d in $(read-file "$WORKSPACE_CACHE_FILE"); do
+      list_git_dirs=("${list_git_dirs[@]}" "$d")
+    done
+
+    for d in $(read-file "$SINGLE_CACHE_FILE"); do
+      selection_list=("${selection_list[@]}" "$d")
+    done
+
     for d in "${list_git_dirs[@]}"; do
       local tmp=("$(fd -t d --hidden --prune -d 4 '\.(bare|git)$' "$d" -x echo "{//}")")
-      selection_list=("${selection_list[@]} ${tmp[@]}")
+      selection_list=("${selection_list[@]}" "${tmp[@]}")
     done
 
     selected=$(write-list "${selection_list[@]}" | fzf)
@@ -163,7 +241,7 @@ function cmd_kill() {
   set +e
   local help_msg
   ifs='' read -r -d '' help_msg <<eof
-USAGE: t kill
+USAGE: tm kill
 
 Kill tmux session
 
@@ -192,11 +270,75 @@ eof
   done
 }
 
+function cmd_remove() {
+  set +e
+  local help_msg
+  ifs='' read -r -d '' help_msg <<eof
+USAGE: tm remove [paths...]
+
+Remove additional registered paths. Removes single paths by default.
+
+OPTIONS:
+  -h, --help      Show help message
+  -w, --workspace Remove workspace paths instead of singles
+
+ARGS:
+  paths           Paths to be removed. If empty fzf will be used to select paths
+eof
+  set -e
+
+  local -a args
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      -w | --workspace)
+        use_workspace=true
+        ;;
+      *)
+        args+=("$1")
+        ;;
+    esac
+    shift
+  done
+
+  local filepath
+  local selected
+  if [[ -z $use_workspace ]]; then
+    filepath="$SINGLE_CACHE_FILE"
+  else
+    filepath="$WORKSPACE_CACHE_FILE"
+  fi
+
+  if [[ ${#args[@]} -eq 0 ]]; then
+    # shellcheck disable=SC2207
+    selected=($(read-file "$filepath" | fzf-down -m))
+
+    if [[ -z $use_workspace ]]; then
+      cmd_remove "${selected[@]}"
+    else
+      cmd_remove -w "${selected[@]}"
+    fi
+    exit 0
+  fi
+
+  for path in "${args[@]}"; do
+    local before after
+    before="$(openssl dgst -sha512 "$filepath" | awk '{print $NF}')"
+    remove-line "$filepath" "$path"
+    after="$(openssl dgst -sha512 "$filepath" | awk '{print $NF}')"
+
+    if [[ $before == "$after" ]]; then
+      echo "Failed to find and remove: $filepath"
+    else
+      echo "Removed: $filepath"
+    fi
+  done
+}
+
 function cmd_wcmd() {
   set +e
   local help_msg
   ifs='' read -r -d '' help_msg <<eof
-USAGE: t wcmd <window> -- <cmd...>
+USAGE: tm wcmd <window> -- <cmd...>
 
 Send a command to a execute in a tmux window
 
@@ -279,6 +421,23 @@ function write-list() {
     echo "$1"
     shift
   done
+}
+
+function read-file() {
+  while IFS= read -r line; do
+    echo "$line"
+  done <"$1"
+}
+
+function remove-line() {
+  # sed -i "/^$1\\s/d" $PROJECTS_PATH
+  grep -v -F \"$2\" >"$1"
+}
+
+function validate-cache-files() {
+  mkdir -p "$CACHE_HOME"
+  [[ -f $WORKSPACE_CACHE_FILE ]] || touch "$WORKSPACE_CACHE_FILE"
+  [[ -f $SINGLE_CACHE_FILE ]] || touch "$SINGLE_CACHE_FILE"
 }
 
 function fzf-down() {
