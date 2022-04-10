@@ -35,7 +35,10 @@ in
     xsession = {
       enable = true;
       scriptPath = ".hm-xsession";
-      windowManager.awesome.enable = true;
+      windowManager.awesome = {
+        enable = true;
+        package = pkgs.awesome-git;
+      };
     };
 
     home.file.".Xresources".text = with config.nyx.modules.theme.colors; ''
