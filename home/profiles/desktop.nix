@@ -37,7 +37,7 @@ in
       scriptPath = ".hm-xsession";
       windowManager.awesome = {
         enable = true;
-        package = pkgs.awesome-git;
+        package = pkgs.awesome;
       };
     };
 
