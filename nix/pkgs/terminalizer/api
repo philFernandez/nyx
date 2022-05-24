@@ -1,0 +1,302 @@
+[
+  {
+    "name": "v0.7.2",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.7.2",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.7.2",
+    "commit": {
+      "sha": "fb079fc3e4a2a7e4939c65f9fe29c7fc96e1a73d",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/fb079fc3e4a2a7e4939c65f9fe29c7fc96e1a73d"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC43LjI="
+  },
+  {
+    "name": "v0.7.1",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.7.1",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.7.1",
+    "commit": {
+      "sha": "25fe82b920c28515f50f4da727d80e4410e57c3c",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/25fe82b920c28515f50f4da727d80e4410e57c3c"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC43LjE="
+  },
+  {
+    "name": "v0.7.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.7.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.7.0",
+    "commit": {
+      "sha": "23ddb977611d1aedaac687d3504b98e03f50c277",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/23ddb977611d1aedaac687d3504b98e03f50c277"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC43LjA="
+  },
+  {
+    "name": "v0.6.1",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.6.1",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.6.1",
+    "commit": {
+      "sha": "1768a1fe6a80bb4b93582981ce804508d28e3365",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/1768a1fe6a80bb4b93582981ce804508d28e3365"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC42LjE="
+  },
+  {
+    "name": "v0.6.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.6.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.6.0",
+    "commit": {
+      "sha": "3951d043721d3901231fb9c8d4c91dda93b6def4",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/3951d043721d3901231fb9c8d4c91dda93b6def4"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC42LjA="
+  },
+  {
+    "name": "v0.5.1",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.5.1",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.5.1",
+    "commit": {
+      "sha": "5422892066a3b4d65930a2d3ec04e933aacd57d9",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/5422892066a3b4d65930a2d3ec04e933aacd57d9"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC41LjE="
+  },
+  {
+    "name": "v0.5.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.5.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.5.0",
+    "commit": {
+      "sha": "d64306d8d93d65d28a86dce24c76fddf159b0361",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/d64306d8d93d65d28a86dce24c76fddf159b0361"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC41LjA="
+  },
+  {
+    "name": "v0.4.1",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.4.1",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.4.1",
+    "commit": {
+      "sha": "851d2e3db3391d2b02602c49fbd9cf54cdff8b9c",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/851d2e3db3391d2b02602c49fbd9cf54cdff8b9c"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC40LjE="
+  },
+  {
+    "name": "v0.4.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.4.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.4.0",
+    "commit": {
+      "sha": "c91c8184dc2dd24d5a7e28ba563cbc8d0002732f",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/c91c8184dc2dd24d5a7e28ba563cbc8d0002732f"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC40LjA="
+  },
+  {
+    "name": "v0.3.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.3.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.3.0",
+    "commit": {
+      "sha": "0a41682f90a6f068a034186287946686dfb32cdc",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/0a41682f90a6f068a034186287946686dfb32cdc"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4zLjA="
+  },
+  {
+    "name": "v0.2.11",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.11",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.11",
+    "commit": {
+      "sha": "92c81f4efc3ca988fcdf3e8915012a258f80d3b0",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/92c81f4efc3ca988fcdf3e8915012a258f80d3b0"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjEx"
+  },
+  {
+    "name": "v0.2.10",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.10",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.10",
+    "commit": {
+      "sha": "034f36df1e16720ede0254981c4098da54762445",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/034f36df1e16720ede0254981c4098da54762445"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjEw"
+  },
+  {
+    "name": "v0.2.9",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.9",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.9",
+    "commit": {
+      "sha": "2306e765b37632dc76130019095272bf5f859c2e",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/2306e765b37632dc76130019095272bf5f859c2e"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjk="
+  },
+  {
+    "name": "v0.2.8",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.8",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.8",
+    "commit": {
+      "sha": "404d85deb8ae1f289ed10103cb64033db2752789",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/404d85deb8ae1f289ed10103cb64033db2752789"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjg="
+  },
+  {
+    "name": "v0.2.7",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.7",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.7",
+    "commit": {
+      "sha": "0904f90e09c6fdf9b616fae732191ebccdb472bb",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/0904f90e09c6fdf9b616fae732191ebccdb472bb"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjc="
+  },
+  {
+    "name": "v0.2.6",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.6",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.6",
+    "commit": {
+      "sha": "1fe51b07ad17f37ff5b0a6b6cc6929d1834293b6",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/1fe51b07ad17f37ff5b0a6b6cc6929d1834293b6"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjY="
+  },
+  {
+    "name": "v0.2.5",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.5",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.5",
+    "commit": {
+      "sha": "929791d61d813a525e34824d7bd43f1bf1437ed0",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/929791d61d813a525e34824d7bd43f1bf1437ed0"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjU="
+  },
+  {
+    "name": "v0.2.4",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.4",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.4",
+    "commit": {
+      "sha": "2f78a2f54825b0717609eece77ee582eef89c448",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/2f78a2f54825b0717609eece77ee582eef89c448"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjQ="
+  },
+  {
+    "name": "v0.2.3",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.3",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.3",
+    "commit": {
+      "sha": "f5168d34025505e8dba52313fc8b777ffa135646",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/f5168d34025505e8dba52313fc8b777ffa135646"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjM="
+  },
+  {
+    "name": "v0.2.2",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.2",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.2",
+    "commit": {
+      "sha": "11b8ae88c00e39660efdc6a3a16d7e9d126976a8",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/11b8ae88c00e39660efdc6a3a16d7e9d126976a8"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjI="
+  },
+  {
+    "name": "v0.2.1",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.1",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.1",
+    "commit": {
+      "sha": "63816c612b0fe8dea960819af3355d5f40e2914f",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/63816c612b0fe8dea960819af3355d5f40e2914f"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjE="
+  },
+  {
+    "name": "v0.2.0",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.2.0",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.2.0",
+    "commit": {
+      "sha": "059c28de628a20e7f707e9288ecfe22bb6cf248c",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/059c28de628a20e7f707e9288ecfe22bb6cf248c"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4yLjA="
+  },
+  {
+    "name": "v0.1.9",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.9",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.9",
+    "commit": {
+      "sha": "3d7a985ea30b44b71e564d5a3b6cc8439482e320",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/3d7a985ea30b44b71e564d5a3b6cc8439482e320"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjk="
+  },
+  {
+    "name": "v0.1.8",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.8",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.8",
+    "commit": {
+      "sha": "4d2c989829f2872b27454ee7c36939fa226edfd3",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/4d2c989829f2872b27454ee7c36939fa226edfd3"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjg="
+  },
+  {
+    "name": "v0.1.7",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.7",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.7",
+    "commit": {
+      "sha": "6979d60104d09328475f9574779c876f14ddf14c",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/6979d60104d09328475f9574779c876f14ddf14c"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjc="
+  },
+  {
+    "name": "v0.1.6",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.6",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.6",
+    "commit": {
+      "sha": "5bacca944f087100dfc29c81f484447bdc798832",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/5bacca944f087100dfc29c81f484447bdc798832"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjY="
+  },
+  {
+    "name": "v0.1.5",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.5",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.5",
+    "commit": {
+      "sha": "ba59e2223c989dd7c492500e066f321ce71ca491",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/ba59e2223c989dd7c492500e066f321ce71ca491"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjU="
+  },
+  {
+    "name": "v0.1.4",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.4",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.4",
+    "commit": {
+      "sha": "9613e55949fbe339942d5a9a433db2635a231a5c",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/9613e55949fbe339942d5a9a433db2635a231a5c"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjQ="
+  },
+  {
+    "name": "v0.1.3",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.3",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.3",
+    "commit": {
+      "sha": "2b9a15cd4046f3d2430ae4f35fb1597847a36e35",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/2b9a15cd4046f3d2430ae4f35fb1597847a36e35"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjM="
+  },
+  {
+    "name": "v0.1.2",
+    "zipball_url": "https://api.github.com/repos/faressoft/terminalizer/zipball/refs/tags/v0.1.2",
+    "tarball_url": "https://api.github.com/repos/faressoft/terminalizer/tarball/refs/tags/v0.1.2",
+    "commit": {
+      "sha": "bac619e22b90e78fbfa1f95553d376979e00e557",
+      "url": "https://api.github.com/repos/faressoft/terminalizer/commits/bac619e22b90e78fbfa1f95553d376979e00e557"
+    },
+    "node_id": "MDM6UmVmMTQxOTEwMDgxOnJlZnMvdGFncy92MC4xLjI="
+  }
+]

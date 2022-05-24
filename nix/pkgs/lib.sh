@@ -6,6 +6,10 @@ curl_opts=(
   -sS
 )
 
+function unquote() {
+  echo $1 | awk '{print substr($0, 2, length($0)-2)}' -
+}
+
 function get_latest_version_from_crates_io() {
   echo "Getting latest version from crates.io API" >&2
   local create result
@@ -25,6 +29,28 @@ function get_latest_version_from_github() {
 
   result=$(curl "${curl_opts[@]}" "$gh_api/$user/$repo/releases/latest" | jq -r .tag_name)
   echo "Version = $result" >&2 && echo "$result"
+}
+
+function get_latest_Version_from_github_tags() {
+  echo "Getting latest version from github tags API" >&2
+  local user repo json version rev
+
+  user="$1"
+  repo="$2"
+
+  # json=$(curl "${curl_opts[@]}" "$gh_api/$user/$repo/tags")
+  json=$(cat api)
+  tag=$(printf '%s' "$json" | jq '[.[].name] | max')
+  rev=$(printf '%s' "$json" | jq ".[] | select(.name == $tag) | .commit.sha")
+
+  tag=$(unquote $tag)
+  rev=$(unquote $rev)
+
+  echo "Tag: $tag" >&2
+  echo "Rev: $rev" >&2
+
+  echo "$tag"
+  echo "$rev"
 }
 
 function get_head_from_github() {
